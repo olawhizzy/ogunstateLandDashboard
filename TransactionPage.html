@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.radixtouch.com/templates/admin/atrio/source/lighthr/pages/forms/basic-form-elements.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 Sep 2021 13:50:41 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Create New Transactions</title>
+    <!-- Favicon-->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- Plugins Core Css -->
+    <link href="assets/css/app.min.css" rel="stylesheet">
+    <link href="assets/css/form.min.css" rel="stylesheet">
+    <!-- Custom Css -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- You can choose a theme from css/styles instead of get all themes -->
+    <link href="assets/css/styles/all-themes.css" rel="stylesheet" />
+    <style>
+         .response h5 {
+            font-size: 23px;
+            font-weight: 600;
+            margin-top: -10px;
+            margin-left: 30px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body class="light">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="m-t-30">
+                <img class="loading-img-spin" src="assets/images/loading.png" alt="admin">
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+    <!-- Top Bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" onClick="return false;" class="navbar-toggle collapsed" data-bs-toggle="collapse"
+                    data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="#" onClick="return false;" class="bars"></a>
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="" />
+                    <span class="logo-name">AtrioHR</span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="float-start">
+                    <li>
+                        <a href="#" onClick="return false;" class="sidemenu-collapse">
+                            <i data-feather="menu"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Full Screen Button -->
+                    <li class="fullscreen">
+                        <a href="javascript:;" class="fullscreen-btn">
+                            <i class="fas fa-expand"></i>
+                        </a>
+                    </li>
+                    <!-- #END# Full Screen Button -->
+                   
+                    
+                    <!-- #END# Tasks -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+    <div>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                    <li class="sidebar-user-panel active">
+                        <div class="user-panel">
+                            <div class=" image">
+                                <img src="assets/images/usrbig.jpg" class="user-img-style" alt="User Image" />
+                            </div>
+                        </div>
+                        <div class="profile-usertitle">
+                            <div class="sidebar-userpic-name"> Engr. Ishola </div>
+                            <div class="profile-usertitle-job ">Manager </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="index.html" >
+                            <i data-feather="monitor"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i data-feather="users"></i>
+                            <span>New Transaction</span>
+                        </a>
+                </ul>
+            </div>
+            <!-- #Menu -->
+        </aside>
+        <!-- #END# Left Sidebar -->
+       
+    </div>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <ul class="breadcrumb breadcrumb-style ">
+                            <li class="breadcrumb-item">
+                                <h4 class="page-title">New Transaction Page</h4>
+                            </li>
+                            <li class="breadcrumb-item bcrumb-1">
+                                <a href="index.html">
+                                    <i class="fas fa-home"></i> Home</a>
+                            </li>
+                            <li class="breadcrumb-item bcrumb-2">
+                                <a href="#" onClick="return false;">Create New Transactions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2 style="font-size: 20px;">New Transactions
+                            </h2>
+                            <ul class="header-dropdown">
+                                <li class="dropdown">
+                                    <a href="#" onClick="return false;" class="dropdown-toggle"
+                                        data-bs-toggle="dropdown" role="button" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <ul class="dropdown-menu float-end">
+                                        <li>
+                                            <a href="#" onClick="return false;">Add</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" onClick="return false;">Edit</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" onClick="return false;">Delete</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                          <!--  <div class="dropdown" style="margin-left: 20px; margin-bottom: 35px;">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Service : -
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <h6 style="width: 450px;">Are you Applying for Yourself</h6>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                          Yes
+                                        </label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                          No
+                                        </label>
+                                      </div>
+                                </ul>
+                              </div> -->
+
+                              <select class="form-select  mt-4 form-select-lg" aria-label="Default select example" style="height: 50px; border: solid 1px #999; width: 10%; margin-left: 30px; margin-bottom: 35px;">
+                                <option selected>Service..</option>
+                                <option value="1">Ifo</option>
+                                <option value="2">Express</option>
+                              </select>
+
+
+
+                              <div class="response row">
+                              <!--  <u><h5>YES</h5></u> -->
+                                <h5 class="col-sm-10 col-lg-5">Are you Applying For Yourself</h5>
+                                <div class="form-check form-check-radio col-sm-6 col-lg-3">
+                                    <label>
+                                        <input name="group1" type="radio" />
+                                        <span>Radio is off</span>
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-radio col-sm-6 col-lg-3">
+                                    <label>
+                                        <input name="group1" type="radio" checked />
+                                        <span>Radio is on</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                              
+                              
+                            <div class="row clearfix">
+                                <div class="col-sm-12">
+                                    <div class="loginmain">
+                                        <div class="formCard">
+                                            <div class="wrapper">
+                                                <form>
+                                                    <div>
+                                                        <input type="name" class="roundInput" style="border-radius: 0;">
+                                                        <label>Name</label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="password" class="roundInput" style="border-radius: 0;" >
+                                                        <label>Address</label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="text"  >
+                                                        <label for="email">Email</label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="text" >
+                                                        <label for="Location">Location</label>
+                                                    </div>
+                                                    <select class="form-select  form-select-lg " aria-label="Default select example" style="height: 50px; border: solid 1px #999; width: 100%;">
+                                                        <option selected>Type...</option>
+                                                        <option value="1">Private</option>
+                                                        <option value="2">Commercial</option>
+                                                        <option value="3">Agriculture</option>
+                                                      </select>
+
+                                                      <select class="form-select  mt-4 form-select-lg" aria-label="Default select example" style="height: 50px; border: solid 1px #999; width: 100%;">
+                                                        <option selected>Area...</option>
+                                                        <option value="1">Ifo</option>
+                                                        <option value="2">Express</option>
+                                                      </select>
+                                                </form>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <h2 class="card-inside-title">Square Corner Example</h2>
+                                                <form>
+                                                    <div>
+                                                        <input type="email" class="squareInput">
+                                                        <label>Username</label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="password" class="squareInput">
+                                                        <label>Password</label>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                <strong>Additional</strong> Details</h2>
+                            <ul class="header-dropdown m-r--5">
+                                <li class="dropdown">
+                                    <a href="#" onClick="return false;" class="dropdown-toggle"
+                                        data-bs-toggle="dropdown" role="button" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <ul class="dropdown-menu float-end">
+                                        <li>
+                                            <a href="#" onClick="return false;">Action</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" onClick="return false;">Another action</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" onClick="return false;">Something else here</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>NAME</th>
+                                        <th>VALUE</th>
+                                      
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Larry</td>
+                                        <td>Jellybean</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Larry</td>
+                                        <td>Kikat</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Plugins Js -->
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/form.min.js"></script>
+    <!-- Custom Js -->
+    <script src="assets/js/admin.js"></script>
+    <script src="assets/js/pages/forms/basic-form-elements.js"></script>
+</body>
+
+
+<!-- Mirrored from www.radixtouch.com/templates/admin/atrio/source/lighthr/pages/forms/basic-form-elements.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 Sep 2021 13:50:42 GMT -->
+</html>
